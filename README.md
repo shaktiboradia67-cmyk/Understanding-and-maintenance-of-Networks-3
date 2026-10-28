@@ -52,3 +52,47 @@ Insert your own screenshot of the router admin login page here.
 **Result:** The router's admin login page was accessed using the default gateway IP address.
 
 I would connect the router to the ISP connection first, followed by a network switch, and then connect all 8 gaming PCs to the switch. This setup provides reliable internet access and efficient communication between the gaming PCs.
+# Q3.Change your device's IP address from 'Obtain IP automatically' (DHCP) to a static IP in the same range as your router (for example, set it to 192.168.1.50 if your router is 192.168.1.1), and test if you still have internet access.<br><br><em><strong>Constraint:</strong> Remember to revert to automatic/DHCP after testing to avoid network issues.</em>
+Ans.>
+## Task: Accessing the Wi-Fi Router Admin Login Page
+
+### Objective
+To find the router's default gateway IP address and open its admin login page.
+
+### Procedure
+
+1. Connect the computer or laptop to the home Wi-Fi network.
+2. Open Command Prompt by pressing `Windows + R`, typing `cmd`, and pressing Enter.
+3. Type the following command:
+
+   ```bash
+   ipconfig
+   ```
+
+4. Find the **Default Gateway** under the active Wi-Fi or Ethernet adapter. It is commonly `192.168.0.1` or `192.168.1.1`.
+5. Open a web browser and enter the gateway IP address in the address bar.
+6. The router's administrator login page should appear.
+7. Take a screenshot of the login page for the practical record.
+
+### Screenshot
+
+Insert your own screenshot of the router admin login page here.
+
+**Result:** The router's admin login page was accessed using the default gateway IP address.
+# Q4.In your router's admin panel, locate the section where you can view or change the DHCP range. Write down the current range, and explain in 2-3 lines what would happen if two devices are assigned the same IP address in this range.
+Ans.>
+## Task: Checking the DHCP IP Address Range
+
+### Objective
+To locate the DHCP range in the router's admin panel and understand IP address conflicts.
+
+### DHCP Range
+- **DHCP Start IP Address:** [Enter your router's start IP]
+- **DHCP End IP Address:** [Enter your router's end IP]
+
+### What Happens if Two Devices Have the Same IP Address?
+
+If two devices on the same network are assigned the same IP address, an IP address conflict occurs. This can cause intermittent connectivity, failed communication, or loss of network access for one or both devices.
+
+### Result
+The DHCP range was checked in the router's admin panel. DHCP helps automatically assign IP addresses to devices and avoid duplicate assignments within its managed address pool.
